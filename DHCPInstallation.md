@@ -82,9 +82,9 @@ sudo vim /etc/dhcp/dhcpd.conf
 
 ## **According To This Configuration**
 
+1. The Server will hand over the IP Address from the range 192.168.100.20 to 192.168.100.100
 1. The default lease time for a client is 10 min(600 seconds) 
 1. The maximum lease time is 2 hrs(7200 seconds)
-1. The Server will hand over the IP Address from the range 192.168.100.20 to 192.168.100.100
 
 ---
 # **Backing Up**
