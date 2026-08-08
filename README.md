@@ -64,10 +64,14 @@ npx @marp-team/marp-cli DHCPIntroduction.md -o DHCPIntroduction.html
 
 Or install the [Marp for VS Code](https://marketplace.visualstudio.com/items?itemName=marp-team.marp-vscode) extension for live preview.
 
-## Author
-
-**Omer**
-
 ## License
 
 This project is licensed under the [MIT License](LICENSE).
+
+
+## Contact
+For any questions or support, please contact:
+
+- **Omer Abdulrehman**
+- **Email:** [consultomer@gmail.com](mailto:consultomer@gmail.com)
+- **LinkedIn:** [Omer Abdulrehman](https://www.linkedin.com/in/omerarehman/)
