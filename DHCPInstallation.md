@@ -16,39 +16,39 @@ Following tools were used in this workshop
 
 ---
 # **Diagram For DHCP Lab**
-![height:4in](/images/Untitled%20picture.png)
+![height:4in](./images/Untitled%20picture.png)
 
 --- 
 # **Creating VM of Ubuntu**
 #### **1. Select Create New Virtual Machine**
-![height:4in](/images/2023-02-01_22h15_26.png)
+![height:4in](./images/2023-02-01_22h15_26.png)
 
 ---
 #### **2. Click On Next.**
-![height:4in](/images/2023-02-01_22h17_39.png)
+![height:4in](./images/2023-02-01_22h17_39.png)
 
 ---
 #### **3. Selecting Image.**
-![height:4in](/images/2023-02-01_22h17_52.png)
+![height:4in](./images/2023-02-01_22h17_52.png)
 1. Browse Iso Image.
 1. Click On Next.
 
 ---
 #### **4. Naming Server.**
-![height:4in](/images/2023-02-01_22h18_54.png)
+![height:4in](./images/2023-02-01_22h18_54.png)
 1. VM name.
 1. VM location.
 1. Click Next.
 
 ---
 #### **5. Storage Allocation.**
-![height:4in](/images/2023-02-01_22h19_06.png)
+![height:4in](./images/2023-02-01_22h19_06.png)
 1. Select Size.
 1. Click Next.
 
 ---
 #### **6. Finish.**
-![height:4in](/images/2023-02-01_22h19_14.png)
+![height:4in](./images/2023-02-01_22h19_14.png)
 1. Customize Hardware(If Needed).
 1. Click On Finish.
 
@@ -65,7 +65,7 @@ Backup Original Configuration file It’s always a good idea to backup original 
 ```
 sudo cp /etc/dhcp/dhcpd.conf /etc/dhcp/dhcpd.conf.org
 ```
-![height:2in](/images/2023-02-01_23h27_57.png)
+![height:2in](./images/2023-02-01_23h27_57.png)
 
 ---
 
@@ -75,7 +75,7 @@ The main configuration file of DHCP server is /etc/dhcp/dhcpd.conf
 sudo vim /etc/dhcp/dhcpd.conf
 ```
 
-![height:3in](/images/2023-02-01_23h34_15.png)
+![height:3in](./images/2023-02-01_23h34_15.png)
 
 ---
 
@@ -92,25 +92,25 @@ Backup Original Configuration file It’s always a good idea to backup original 
 ```
 sudo cp /etc/default/isc-dhcp-server /etc/default/isc-dhcp-server.org
 ```
-![height:3in](/images/2023-02-02_00h02_58.png)
+![height:3in](./images/2023-02-02_00h02_58.png)
 
 ---
 ## **Checking Infterface Name For DHCP**
 ```
 ip a
 ```
-![height:4in](/images/2023-02-01_23h44_24.png)
+![height:4in](./images/2023-02-01_23h44_24.png)
 
 ---
 ## **Adding Infterface Name For DHCP**
 ```
 sudo vim /etc/default/isc-dhcp-server
 ```
-![height:4in](/images/2023-02-02_00h10_35.png)
+![height:4in](./images/2023-02-02_00h10_35.png)
 
 ---
 ## **Configuring Firewall**
-![height:4in](/images/2023-02-02_00h48_20.png)
+![height:4in](./images/2023-02-02_00h48_20.png)
 ```
 sudo ufw status
 sudo ufw enable
@@ -134,7 +134,7 @@ sudo systemctl status isc-dhcp-server.service
 An active status indicates that the DHCP Server has successfully picked up the configuration and is ready to hand out IP Addresses.
 
 ---
-![](/images/2023-02-02_00h53_38.png)
+![](./images/2023-02-02_00h53_38.png)
 
 ---
 # **Check Lease List**
@@ -142,7 +142,7 @@ This can be done using the Command:
 ```
 sudo dhcp-lease-list
 ```
-![height:3in](/images/2023-02-02_01h05_05.png)
+![height:3in](./images/2023-02-02_01h05_05.png)
 
 ---
 # **Check MAC address Of Host1**
@@ -150,14 +150,14 @@ To Check MAC Address use this Command:
 ```
 ip a
 ``` 
-![height:3in](/images/2023-02-02_01h55_10.png)
+![height:3in](./images/2023-02-02_01h55_10.png)
 
 ---
 ### **Configuring IP Reservation For Host1**
 ```
 sudo vim /etc/dhcp/dhcpd.conf
 ```
-![height:2in](/images/2023-02-02_01h48_53.png)
+![height:2in](./images/2023-02-02_01h48_53.png)
 
 Now that we have the MAC Address, we can put it in the configuration file:
 This will reserve the IP Address 192.168.100.22 for the client with the MAC Address 00:0C:29:95:3B:A6.
@@ -168,7 +168,7 @@ This can be done using the Command:
 ```
 sudo dhcp-lease-list
 ```
-![height:3in](/images/2023-02-02_01h58_45.png)
+![height:3in](./images/2023-02-02_01h58_45.png)
 
 ---
 # **Troubleshooting**

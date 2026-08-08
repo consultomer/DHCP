@@ -12,7 +12,7 @@ DHCP stands for Dynamic Host Configuration Protocol is a network protocol used t
 ---
 1. How DHCP works to allocate IP addresses to clients:
 
-![height:6in](/images/DHCP.drawio.png)
+![height:6in](./images/DHCP.drawio.png)
 
 ---
 1. Client sends a broadcast message requesting an IP address.
@@ -24,22 +24,22 @@ DHCP stands for Dynamic Host Configuration Protocol is a network protocol used t
 ---
 # **1. Discover**
 
-![](/images/DHCPDiscover.png)
+![](./images/dhcpdiscover.png)
 
 ---
 # **2. Offer**
 
-![](/images/DHCPOffer.png)
+![](./images/dhcpoffer.png)
 
 ---
 # **3. Request**
 
-![](/images/DHCPRequest.png)
+![](./images/dhcprequest.png)
 
 ---
 # **4. Acknowledgement**
 
-![](/images/DHCPAck.png)
+![](./images/dhcpack.png)
 
 
 ---
